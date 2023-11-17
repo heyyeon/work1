@@ -1,0 +1,105 @@
+*{
+  margin: 0; padding: 0;
+}
+
+ul,li,ol{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
+
+/* header */
+.top{
+  display: flex;
+  width: 100%;
+  height: 55px;
+  background: linear-gradient(to bottom, #0000009b, #0000000c);
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.blurred-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(0.2px);
+}
+
+h1 > a > img{
+  width: 100px;height: 50px;
+  margin: 5px 50px;
+  cursor: pointer;
+}
+.gnb {position: absolute;
+  top:0px; left: 150px;
+}
+.gnb > ul{
+  display: flex;
+  margin-top: 25px;
+}
+.gnb > ul > li{
+  margin-left: 25px;
+  font-size: 15px;
+}
+.gnb > ul > li >a{
+  color: #ffffffc9;
+}
+.lnb > ul{
+  display: flex;
+  position: absolute;
+  top: 13px; right: 40px;
+}
+.lnb > ul> li{
+  margin: 0 10px;
+}
+.lnb >ul >li >a{
+  align-items: center;
+}
+.alram, .search{
+  color: #fff;
+}
+#intro{
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  z-index: -999;
+}
+#intro img{
+  width: 100%;
+}
+.main_txt{
+  width: 480px; height: 110px;
+  position: absolute;
+  top: 140px; left: 50px;
+}
+.kdrama{
+  position: relative;
+  width: 100%; height: 100%;
+}
+.kdrama> p{
+  position: absolute;
+  top: -170px; left: 50px;
+  color: #ffffffc9;
+  font-weight: 500;
+  font-size: 18px;
+}
+.kdrama> .drama_list{
+  display: flex;
+  position: absolute;
+  top: -150px; left: 50px;
+  overflow: hidden;
+}
+.kdrama> .drama_list > li{
+  width: 220px; height: 168px;
+  margin: 5px 5px;
+}
+.kdrama> .drama_list > li> img{
+  border-radius: 13px;
+}
+.kdrama> .drama_list > li> img:hover{
+ transform: scale(1.1);
+}
